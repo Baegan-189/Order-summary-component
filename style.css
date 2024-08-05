@@ -1,0 +1,131 @@
+@import url(https://fonts.googleapis.com/css?family=Red+Hat+Display:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display';
+}
+
+body {
+    background: url(pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: hsl(225, 100%, 94%);
+    background-position-y: -270px;
+}
+
+@media (max-width: 500px) {
+    body {
+        background: url(pattern-background-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: hsl(225, 100%, 94%);
+        background-position-y: -270px;
+    }
+}
+
+article {
+   margin: auto;
+   width: 350px;
+   background-color: white;
+   border-radius: 10px;
+   height: 500px;
+   margin-top: 60px;
+   box-shadow: 1px 1px 7px hsla(245, 75%, 52%, 0.363);
+}
+
+.order-summary-component-img img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.order-summary-content {
+    padding: 1.5em;
+}
+
+.heading-1 {
+    color: hsl(223, 47%, 23%);
+    text-align: center;
+    padding-bottom: 10px;
+    font-weight: 900;
+}
+
+.description {
+    color:  hsl(224, 23%, 55%);
+    font-weight: 500;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.order-summary-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.heading-2 {
+    font-size: 15px;
+    color: hsl(223, 47%, 23%);
+}
+
+.change {
+    font-size: 13px;
+    margin-top: 12px;
+    color: hsl(245, 75%, 52%);
+    font-weight: 500;
+}
+
+.change:hover {
+    text-decoration: none;
+}
+
+.price {
+    font-size: 13px;
+}
+
+.icon-music {
+    padding-right: 10px;
+}
+
+.order-summary-flex {
+    display: flex;
+}
+
+.cancel-order {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    color: hsl(245, 75%, 52%);
+}
+
+.cancel-order:hover {
+    color: hsl(223, 47%, 23%);
+    text-decoration: none;
+}
+
+.btn {
+    height: 44px;
+    width: 100%;
+    background-color: hsl(245, 75%, 52%);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: 700;
+    box-shadow: 10px 10px 10px hsla(245, 75%, 52%, 0.363);
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: hsla(245, 75%, 52%, 0.76);
+}
+
+.attribution {
+    margin-top: 10px;
+}
